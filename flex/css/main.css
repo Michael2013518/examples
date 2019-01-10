@@ -69,7 +69,7 @@ align-self： auto | flex-start | flex-end | center | baseline | stretch;
   font-size: 20px;
 }
 .header ul li a:hover{
-  color: #999;
+  color: #fff;
 }
 .content{
   margin-top: 2rem;
