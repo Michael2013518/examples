@@ -77,8 +77,8 @@ align-self： auto | flex-start | flex-end | center | baseline | stretch;
   background-color: #fff;
   display: flex;
   flex-direction: row;
-  align-items: center;
-  /* align-content: center; */
+  /* align-items: center; */
+  align-content: center;
 }
 .content span{
   /* display: flex; */
@@ -89,13 +89,25 @@ align-self： auto | flex-start | flex-end | center | baseline | stretch;
   font-size: 25px;
   /* align-content: center; */
 }
+.content span:nth-child(odd){
+  color: black;
+  background-color: #999;
+}
 .content span:nth-child(even){
   color: orange;
   background-color: #eee;
 }
 .footer{
-  flex: 1;
+  display: flex;
   margin-top: 2rem;
   height: 10rem;
   background-color: #fff;
+  flex-flow: row wrap;
+  align-items: center;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.footer span{
+  font-size: 25px;
+  flex:1;
 }
